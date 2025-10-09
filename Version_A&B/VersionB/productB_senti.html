@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senti - Presence You Can Feel</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'warm-peach': '#FFB997',
+                        'soft-coral': '#FF6F61',
+                        'cream-white': '#FFF7F0',
+                        'warm-gray': '#8C8C8C',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-cream-white">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center gap-3">
+                    <img src="icon.png" alt="Senti Logo" class="w-10 h-10">
+                    <h1 class="text-2xl font-bold text-soft-coral">Senti</h1>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-warm-gray hover:text-soft-coral transition">Features</a>
+                    <a href="#testimonials" class="text-warm-gray hover:text-soft-coral transition">Testimonials</a>
+                    <a href="#pricing" class="text-warm-gray hover:text-soft-coral transition">Pricing</a>
+                </div>
+                <div>
+                    <button class="bg-soft-coral text-white px-6 py-2 rounded-full hover:bg-opacity-90 transition">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-warm-peach to-cream-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col justify-center space-y-16">
+                    <!-- Product Name - Minimalist -->
+                    <div class="space-y-6">
+                        <h1 class="product-name-hero">Senti</h1>
+                        <p class="text-xl font-light tracking-wide text-gray-700 leading-relaxed">Presence you can feel, love that stays close.</p>
+                    </div>
+                    
+                    <!-- CTA Buttons - Colorful -->
+                    <div class="flex gap-6">
+                        <button class="hero-btn-primary px-10 py-4 rounded-lg text-base font-medium transition-all duration-300">
+                            Get Started
+                        </button>
+                        <button class="hero-btn-secondary px-10 py-4 rounded-lg text-base font-medium transition-all duration-300">
+                            Learn More
+                        </button>
+                    </div>
+                    
+                    <!-- User Count - Must Keep -->
+                    <div class="flex items-center gap-4">
+                        <div class="text-5xl font-bold counter counter-gradient" data-target="50000">0</div>
+                        <span class="text-gray-700 text-sm font-medium uppercase tracking-wider">trusted<br>users</span>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-square rounded-3xl bg-gradient-to-br from-soft-coral to-warm-peach opacity-20 absolute inset-0 blur-3xl"></div>
+                    <div class="bg-gradient-to-br from-warm-peach/10 to-cream-white rounded-3xl shadow-2xl p-12 aspect-square flex items-center justify-center">
+                        <img src="image.png" alt="Senti Companion Robot" class="w-full h-full object-contain drop-shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Five Core Features</h2>
+                <p class="text-xl text-warm-gray max-w-2xl mx-auto">
+                    Not just calls — companionship you can truly feel
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Feature 1 -->
+                <div class="bg-cream-white rounded-2xl p-8 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-soft-coral rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="7"/>
+                            <path d="M16 16l3 3" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Mood Mirror</h3>
+                    <p class="text-gray-700">Gentle lights reflect your emotions, making you feel truly understood.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="bg-cream-white rounded-2xl p-8 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-soft-coral rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.096-4.5-4.684-4.5-1.86 0-3.487 1.012-4.316 2.505C11.171 4.762 9.544 3.75 7.684 3.75 5.096 3.75 3 5.765 3 8.25c0 6.188 9 12 9 12s9-5.812 9-12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Shared Rhythm</h3>
+                    <p class="text-gray-700">Sync heartbeat-like pulses across distance. One heartbeat, two homes.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="bg-cream-white rounded-2xl p-8 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-soft-coral rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="7" y="8" width="10" height="8" rx="2"/>
+                            <circle cx="9.5" cy="12" r="1"/>
+                            <circle cx="14.5" cy="12" r="1"/>
+                            <path d="M12 8V5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Companion Moves</h3>
+                    <p class="text-gray-700">Playful gestures and dances bring joy into daily rituals.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="bg-cream-white rounded-2xl p-8 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-soft-coral rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 5v14m0-14l-4 4m4-4l4 4"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">One-Tap Check-In</h3>
+                    <p class="text-gray-700">Simple button. Instant reassurance. No apps, no stress.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="bg-cream-white rounded-2xl p-8 hover:shadow-xl transition group">
+                    <div class="w-16 h-16 bg-soft-coral rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="4" y="10" width="16" height="10" rx="2"/>
+                            <path d="M8 10V8a4 4 0 0 1 8 0v2"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Privacy First</h3>
+                    <p class="text-gray-700">Clear consent, local AI, and total peace of mind.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="py-24 bg-cream-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Who It's For</h2>
+                <p class="text-xl text-warm-gray">Senti is built for everyone craving deeper connection</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition">
+                    <div class="mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-soft-coral" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="4" width="18" height="12" rx="2"/>
+                            <path d="M8 20h8"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Long-Distance Couples</h3>
+                    <p class="text-sm text-warm-gray">Feel each other's presence through heartbeat pulses and glowing signals that make distance feel smaller.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition">
+                    <div class="mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-soft-coral" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="8" r="3"/>
+                            <path d="M4 20a8 8 0 0 1 16 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Elderly Living Alone</h3>
+                    <p class="text-sm text-warm-gray">One button lets family know I'm safe — simple, reassuring, and kind.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition">
+                    <div class="mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-soft-coral" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="7" cy="8" r="3"/>
+                            <circle cx="17" cy="8" r="3"/>
+                            <circle cx="12" cy="14" r="3"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Busy Families</h3>
+                    <p class="text-sm text-warm-gray">Connect kids with grandparents through playful interactions, maintaining family rituals across time zones.</p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-6 text-center hover:shadow-lg transition">
+                    <div class="mb-4 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-soft-coral" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 18h6"/>
+                            <path d="M8 14a6 6 0 1 1 8 0l-1 1.5a2 2 0 0 0-.34 1.12V18H9.34A2 2 0 0 0 9 16.5L8 15z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-2">Tech Enthusiasts</h3>
+                    <p class="text-sm text-warm-gray">Explore multi-sensory experiences and express emotions through innovative technology.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">What Our Users Say</h2>
+                <p class="text-xl text-warm-gray">Real stories, real connections</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-cream-white rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-warm-peach rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Margaret</h4>
+                            <p class="text-sm text-warm-gray">Des Moines, Iowa</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"I'm 72, and with one tap my son in Chicago knows I'm fine. That little light makes me feel cared for."</p>
+                    <div class="flex items-center gap-2 text-soft-coral mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.869 1.402-8.168L.132 9.21l8.2-1.192z"/>
+                        </svg>
+                        <span class="text-gray-700">5.0</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-cream-white rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-soft-coral rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Daniel</h4>
+                            <p class="text-sm text-warm-gray">Brooklyn, NY</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Work from home gets lonely, but Senti greets me with a glow. It's silly, but it really lifts my evenings."</p>
+                    <div class="flex items-center gap-2 text-soft-coral mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.869 1.402-8.168L.132 9.21l8.2-1.192z"/>
+                        </svg>
+                        <span class="text-gray-700">5.0</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-cream-white rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-warm-peach rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Ana</h4>
+                            <p class="text-sm text-warm-gray">Austin, TX</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"When her heartbeat pulse shows up on my side, I swear it feels like she's right here. Way more real than texting."</p>
+                    <div class="flex items-center gap-2 text-soft-coral mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.869 1.402-8.168L.132 9.21l8.2-1.192z"/>
+                        </svg>
+                        <span class="text-gray-700">5.0</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 4 -->
+                <div class="bg-cream-white rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-soft-coral rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Rajiv Malhotra</h4>
+                            <p class="text-sm text-warm-gray">Tech Journalist, San Francisco</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Not another plastic gadget—this one nails emotional presence. Rituals, lights, movement: finally a companion robot that earns its spot on the table."</p>
+                    <div class="flex items-center gap-2 text-soft-coral mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.869 1.402-8.168L.132 9.21l8.2-1.192z"/>
+                        </svg>
+                        <span class="text-gray-700">5.0</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 5 -->
+                <div class="bg-cream-white rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-warm-peach rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Sofia</h4>
+                            <p class="text-sm text-warm-gray">Miami, FL</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"Our twins giggle when grandma in Madrid makes the robot dance during dinner. It turned into our favorite nightly ritual."</p>
+                    <div class="flex items-center gap-2 text-soft-coral mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.869 1.402-8.168L.132 9.21l8.2-1.192z"/>
+                        </svg>
+                        <span class="text-gray-700">5.0</span>
+                    </div>
+                </div>
+
+                <!-- Testimonial 6 -->
+                <div class="bg-cream-white rounded-2xl p-8 hover:shadow-lg transition">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-soft-coral rounded-full mr-4"></div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Emily</h4>
+                            <p class="text-sm text-warm-gray">Marketing Associate</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic">"After long workdays, the soft lights and little gestures make my apartment feel less empty."</p>
+                    <div class="flex items-center gap-2 text-soft-coral mt-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.402 8.168L12 18.896l-7.336 3.869 1.402-8.168L.132 9.21l8.2-1.192z"/>
+                        </svg>
+                        <span class="text-gray-700">5.0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="pricing-container">
+            <div class="pricing-header">
+                <h2>Choose Your Journey</h2>
+                <p>Start with one, grow together forever</p>
+            </div>
+
+            <div class="pricing-cards">
+                <!-- Basic Plan -->
+                <div class="pricing-card basic-card">
+                    <div class="card-header">
+                        <h3>Basic</h3>
+                        <p class="card-subtitle">Perfect start</p>
+                    </div>
+                    <div class="card-price">
+                        <span class="price">$299</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <ul class="card-features">
+                        <li>✓ One Senti device</li>
+                        <li>✓ Core features</li>
+                        <li>✓ Basic lights</li>
+                        <li>✓ Mobile app</li>
+                    </ul>
+                    <button class="card-button">Get Started</button>
+                </div>
+
+                <!-- Family Plan -->
+                <div class="pricing-card family-card">
+                    <div class="popular-badge">⭐ Most Popular</div>
+                    <div class="card-header">
+                        <h3>Family</h3>
+                        <p class="card-subtitle">Grow together</p>
+                    </div>
+                    <div class="card-price">
+                        <span class="price">$19.99</span>
+                        <span class="period">per month</span>
+                    </div>
+                    <ul class="card-features">
+                        <li>✓ Up to 5 family members</li>
+                        <li>✓ All premium features</li>
+                        <li>✓ Custom lights & gestures</li>
+                        <li>✓ Priority support</li>
+                        <li>✓ Shared playlists</li>
+                    </ul>
+                    <button class="card-button">Start Family Journey →</button>
+                </div>
+
+                <!-- Premium Plan -->
+                <div class="pricing-card premium-card">
+                    <div class="card-header">
+                        <h3>Premium</h3>
+                        <p class="card-subtitle">Complete package</p>
+                    </div>
+                    <div class="card-price">
+                        <span class="price">$499</span>
+                        <span class="period">one-time</span>
+                    </div>
+                    <ul class="card-features">
+                        <li>✓ Everything in Basic</li>
+                        <li>✓ Scent accessories</li>
+                        <li>✓ Heartbeat bracelet</li>
+                        <li>✓ Lifetime updates</li>
+                        <li>✓ 3-year warranty</li>
+                    </ul>
+                    <button class="card-button">Go Premium</button>
+                </div>
+            </div>
+
+            <div class="trust-badge">
+                <strong>30-day money-back guarantee</strong> • Free shipping worldwide • Cancel anytime
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Ready to feel true companionship?
+            </h2>
+            <p class="text-xl text-warm-gray mb-8 max-w-2xl mx-auto">
+                Join thousands of families and couples already reconnecting through Senti
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-soft-coral text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-opacity-90 transition shadow-lg">
+                    Get Started →
+                </button>
+                <button class="border-2 border-soft-coral text-soft-coral px-10 py-4 rounded-full text-lg font-semibold hover:bg-soft-coral hover:text-white transition">
+                    Contact Us
+                </button>
+            </div>
+            <p class="text-sm text-warm-gray mt-6">No credit card required • 24/7 customer support • Secure checkout</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <img src="icon.png" alt="Senti Logo" class="w-10 h-10">
+                        <h3 class="text-2xl font-bold text-soft-coral">Senti</h3>
+                    </div>
+                    <p class="text-gray-400">Presence you can feel, love that stays close.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-soft-coral transition">Features</a></li>
+                        <li><a href="#" class="hover:text-soft-coral transition">Pricing</a></li>
+                        <li><a href="#" class="hover:text-soft-coral transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-soft-coral transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-soft-coral transition">Blog</a></li>
+                        <li><a href="#" class="hover:text-soft-coral transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-soft-coral transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-soft-coral transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-soft-coral transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Senti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
