@@ -10,14 +10,14 @@
 </p>
 ---
 
-## 🚀 Why Companio?
+## Why Companio?
 Companio isn’t just a gadget — it’s a **companion robot** designed to make everyday life easier, smarter, and more fun.  
 
 From fetching snacks to hosting trivia nights, Companio adapts to you and your family’s lifestyle.
 
 ---
 
-## ✨ Key Features
+## Key Features
 | 🚚 Smart Pickup & Delivery | 🎥 Always Connected | 🎶 Entertainment Hub |
 |----------------------------|--------------------|----------------------|
 | Fetches food deliveries, packages, or snacks. | Video calls, messages, reminders. | Music, trivia, party host mode. |
@@ -28,7 +28,7 @@ From fetching snacks to hosting trivia nights, Companio adapts to you and your f
 
 ---
 
-## 💬 Reviews & Endorsements
+## Reviews & Endorsements
 > ⭐ *“Companio redefines what a home robot should be — it doesn’t just sit, it acts.”*  
 > — Tech Innovators Weekly  
 
@@ -40,7 +40,7 @@ From fetching snacks to hosting trivia nights, Companio adapts to you and your f
 
 ---
 
-## 🎯 Marketing Blurbs
+## Companio is For Everyone
 - **For families**: *“Bring more fun into the living room. From trivia nights to snack runs, Companio makes memories happen.”*  
 - **For professionals**: *“Never miss a call, delivery, or break. Companio keeps your workday smooth and connected.”*  
 - **For seniors**: *“Stay connected with loved ones, get helpful reminders, and enjoy companionship every day.”*  
@@ -48,7 +48,7 @@ From fetching snacks to hosting trivia nights, Companio adapts to you and your f
 
 ---
 
-## 📦 Get Started
+## Get Started
 👉 [**See how Companio fits in your life**](#)  
 
 <p align="center">
